@@ -94,7 +94,7 @@ public class RestaurentActivity extends AppCompatActivity {
         offersModels.add(new OffersModels(R.drawable.img16));
         offersModels.add(new OffersModels(R.drawable.img19));
         offersModels.add(new OffersModels(R.drawable.img18));
-        offerAdapter = new OfferAdapter(offersModels);
+        offerAdapter = new OfferAdapter(offersModels, this);
         recyclerViewOffers.setAdapter(offerAdapter);
     }
 }

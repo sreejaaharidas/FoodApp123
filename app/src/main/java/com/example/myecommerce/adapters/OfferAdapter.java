@@ -1,5 +1,7 @@
 package com.example.myecommerce.adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myecommerce.R;
+import com.example.myecommerce.RestaurentActivity;
 import com.example.myecommerce.models.OffersModels;
 import com.makeramen.roundedimageview.RoundedImageView;
 
@@ -16,9 +19,11 @@ import java.util.List;
 public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.ViewHolder> {
 
     List<OffersModels> list;
+    Context ctx;
 
-    public OfferAdapter(List<OffersModels> list) {
+    public OfferAdapter(List<OffersModels> list, Context ctx) {
         this.list = list;
+        this.ctx = ctx;
     }
 
     @NonNull
@@ -31,7 +36,10 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         holder.roundedImageView.setImageResource(list.get(position).getImg());
-
+holder.itemView.setOnClickListener(v -> {
+    Intent i = new Intent(ctx, RestaurentActivity.class);
+    ctx.startActivity(i);
+});
     }
 
     @Override

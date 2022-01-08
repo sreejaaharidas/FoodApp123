@@ -6,131 +6,25 @@
     android:layout_height="match_parent"
 
 
-    android:layout_margin="15dp"><![CDATA[
-
-    @+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="6dp"
-        android:background="@drawable/edit_txt_bg"
-        android:drawableLeft="@drawable/search"
-        android:drawablePadding="5dp"
-        android:drawableTint="@color/purple_200"
-        android:elevation="5dp"
-        android:padding="15dp"
-        android:text="Search for shops and restaurents"
-        android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
+    >
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/roundedImageView13"
         android:layout_width="318dp"
         android:layout_height="155dp"
         android:layout_margin="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
         android:src="@drawable/img12"
-        app:layout_constraintBottom_toTopOf="@+id/roundedImageView2"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:riv_corner_radius="10dp" />
 
     <TextView
         android:id="@id/textView"
         android:layout_width="204dp"
         android:layout_height="29dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="88dp"
         android:fontFamily="@font/poppins"
         android:text="Good Evening, Sree"
         android:textColor="@color/black"
@@ -140,57 +34,45 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="136dp"
         android:fontFamily="@font/poppins"
         android:text="What's for dinner? Thee are \n722 restaurants"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="163dp"
         android:layout_height="117dp"
-        android:layout_marginEnd="16dp"
         android:src="@drawable/img11"
-        app:layout_constraintEnd_toEndOf="parent/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="
-        tools:layout_editor_absoluteY="89dp" />
-
-    <LinearLayout
-        android:gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent">
-
-
-    </LinearLayout>
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/roundedImageView2"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
         android:src="@drawable/img16"
-        app:riv_corner_radius="10dip"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundedImageView13"
+        app:riv_corner_radius="10dip" />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:layout_width="145dp"
         android:layout_height="156dp"
-        android:layout_marginTop="400dp"
         android:src="@drawable/img15"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/roundedImageView13"
-        app:layout_constraintVertical_bias="1.0"
-        app:riv_corner_radius="10dip"
-        tools:layout_editor_absoluteX="27dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/roundedImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/roundedImageView2"
+        app:layout_constraintTop_toTopOf="@+id/roundedImageView2"
+        app:riv_corner_radius="10dip" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
